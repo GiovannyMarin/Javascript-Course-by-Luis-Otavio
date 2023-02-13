@@ -1,0 +1,56 @@
+p {
+	margin-block-end: 0.5rem;
+	margin-block-start: 0rem;
+	margin-right: 0.5rem;
+}
+
+input {
+	margin-block-end: 0.5rem;
+	margin-block-start: 0rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 3rem 1fr;
+	grid-template-areas:
+		"intro intro"
+		"nomes inputs "
+		"enviar enviar"
+		"resultado resultado";
+	width: 800px;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.dados {
+	display: flex;
+}
+
+.nomes {
+	flex: 1;
+}
+
+.intro {
+	grid-area: intro;
+	text-align: center;
+}
+
+.inputs {
+	grid-area: inputs;
+}
+
+.nomes {
+	grid-area: nomes;
+}
+
+.enviar {
+	grid-area: enviar;
+	display: block;
+}
+
+.resultado {
+	grid-area: resultado;
+	text-align: center;
+}
